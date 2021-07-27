@@ -1,0 +1,263 @@
+
+
+body {
+  height: fit-content;
+  background-image: linear-gradient(to right, powderblue , pink);
+}
+
+
+
+
+* {box-sizing:border-box;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: sticky;
+  margin: auto;
+   flex: 1 1 auto;
+}
+
+
+.mySlides {
+  display: none;
+   flex: 1 1 auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active.dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+.flex {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  flex-direction: row; 
+  margin-top: 50px;
+}
+
+.flex > section {
+  flex: 1 1 auto; 
+flex-wrap: wrap;
+  text-align: center;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  max-width: 100px; 
+  margin-top: 50px
+}
+
+.flex > section > p {
+  flex-grow: 1; 
+}
+
+ul {
+	display: flex;
+	color: forestgreen;
+	text-align: center;
+	font-size: 10px;
+    display: block;
+    list-style-type: disc;
+    padding-inline-start: 20px;
+  
+}
+
+h2 {
+  color: rosybrown;
+  font-size: 15px;
+  font-family: "fantasy", Papyrus;
+  margin: 0px;
+  padding: 2px 5px;
+  text-align: center;
+}
+
+p {
+  background-color: burlywood;
+  color: floralwhite;
+  font-size: 10px;
+  font-family: "fantasy", Papyrus;
+  padding: 8px 8px;
+  margin: 0px;
+  text-align: center
+}
+
+
+.addtocart {
+display: flex;
+  padding: 1px 2px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 8px;
+  margin: 1px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: relative;
+  top: 30px;
+  bottom: 50px;
+  right: 5px;
+  left: 20px;
+  width: 50px;
+  height: 25px;
+  border: 3px solid #CD88AF;
+  background-color: #CD88AF;
+  color: white;
+  border: 2px solid #CD88AF;
+}
+
+
+.addtocart:hover {
+	background-color: #6F4D8F;
+}
+
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+
+.alert {
+  color: black;
+  padding: 2px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
